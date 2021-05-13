@@ -2,6 +2,10 @@ import React from 'react';
 import CardItem from './CardItem';
 import './Cards.css';
 import Greece from "../images/greece.jpg";
+import EasterIsland from "../images/easterisland.jpg";
+import Peru from "../images/peru.jpg";
+import Malaysia from "../images/malaysia.jpg";
+import Kenya from "../images/kenya.jpg";
 
 function Cards() {
     return (
@@ -18,30 +22,30 @@ function Cards() {
                         
                         />
                         <CardItem 
-                            src= {Greece}
-                            text="Explore and fall in love with Greece"
-                            label = "Greece"
+                            src= {EasterIsland}
+                            text="Witness the mysteries of Easter Island"
+                            label = "Easter Island"
                             path = '/services'
                         
                         />
                         <CardItem 
-                            src= {Greece}
-                            text="Explore and fall in love with Greece"
-                            label = "Greece"
+                            src= {Peru}
+                            text="Reach new altitudes in Peru"
+                            label = "Peru"
                             path = '/services'
                         
                         />
                         <CardItem 
-                            src= {Greece}
-                            text="Explore and fall in love with Greece"
-                            label = "Greece"
+                            src= {Malaysia}
+                            text= "Visit the orangutans of Borneo"
+                            label = "Malaysia"
                             path = '/services'
                         
                         />
                         <CardItem 
-                            src= {Greece}
-                            text="Explore and fall in love with Greece"
-                            label = "Greece"
+                            src= {Kenya}
+                            text= "Make new friends in Kenya"
+                            label = "Kenya"
                             path = '/services'
                         
                         />
