@@ -3,11 +3,12 @@ import { Button } from './Button';
 import './Hero.css';
 import '../App.css';
 import { AiFillPlayCircle } from "react-icons/ai";
+import video from "../videos/video-2.mp4";
 
 function Hero() {
     return (
         <div className="container">
-            <video src="./videos/video-2.mp4" autoPlay loop muted />
+            <video src={video} autoPlay loop muted />
             <h1>ADVENTURE AWAITS</h1>
             <p>What are you waiting for?</p>
             <div className="hero-btns">
@@ -24,7 +25,7 @@ function Hero() {
                     buttonSize='btn--large'
                 >
                 WATCH TRAILER
-                    <AiFillPlayCircle />
+                    <AiFillPlayCircle style={{marginLeft: "4px"}}/>
                 </Button>
             </div>
         </div>
