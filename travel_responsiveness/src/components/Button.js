@@ -2,29 +2,29 @@ import React from 'react';
 import './Button.css'
 import { Link } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline']
+const STYLES = ['btn--primary', 'btn--outline'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-function Button({
+export const Button = ({
     children, 
     type, 
     onClick,
     buttonStyle,
     buttonSize
- }) {
+ }) => {
 
-    const checkButtonStyle = () => {
+    const checkButtonStyle = 
         STYLES.includes(buttonStyle)
             ? buttonStyle
-            : STYLES[0]
-    }
+            : STYLES[0];
+    
 
-    const checkButtonSize = () => {
+    const checkButtonSize = 
         SIZES.includes(buttonSize) 
             ? buttonSize 
-            : SIZES[0]
-    }
+            : SIZES[0];
+    
     
 
     return (
@@ -39,5 +39,3 @@ function Button({
         </Link>
     )
 }
-
-export default Button;

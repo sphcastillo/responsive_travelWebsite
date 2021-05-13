@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaTypo3, FaBars } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
-
+import './Navbar.css';
+import { Button } from './Button.js';
 
 
 
@@ -35,7 +36,7 @@ function Navbar() {
                         <FaTypo3 />
                     </Link>
                     <div className='menu-icon' onClick={handleClick} >
-                        {click ? <IoMdClose /> : <FaBars /> }
+                        {click ? <IoMdClose style={{color: "white"}}/> : <FaBars style={{color: "white", fontSize: "2rem"}}/> }
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
