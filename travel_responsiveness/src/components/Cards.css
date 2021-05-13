@@ -134,6 +134,7 @@ h1 {
 }
 
 @media only screen and (min-width: 1024px){
+    
     .cards_items {
 
         display: flex;
@@ -144,7 +145,7 @@ h1 {
 @media only scren and (max-width: 1024px){
 
     .cards_item {
-        
+
         margin-bottom: 2rem;
     }
 }

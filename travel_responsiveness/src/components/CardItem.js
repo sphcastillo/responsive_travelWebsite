@@ -1,20 +1,26 @@
  import React from 'react';
  import { Link } from 'react-router-dom';
 
-function CardItem() {
+function CardItem(props) {
     return (
         <>
             <li className="cards_item">
-                <Link className="cards_item_link">
-                    <figure className="cards_item_pic-wrap">
+                <Link 
+                    className="cards_item_link"
+                    to={props.path}
+                >
+                    <figure 
+                        data-category={props.label}
+                        className="cards_item_pic-wrap"
+                    >
                         <img 
-                            src = '' 
+                            src = {props.src} 
                             alt = 'Travel Image'
-                            className = 'item_img'
+                            className = 'cards_item_img'
                         />
                     </figure>
                     <div className='cards_item_info'>
-                        <h5 className='item_text' />
+                        <h5 className='item_text'>{props.text}</h5>
                     </div>
                 </Link>
             </li>
