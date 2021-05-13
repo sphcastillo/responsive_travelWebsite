@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaTypo3, FaBars } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
@@ -18,6 +18,7 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
+
         if(window.innerWidth <= 960){
             setButton(false);
         }else{
@@ -25,13 +26,23 @@ function Navbar() {
         }
     };
 
+    useEffect(() => {
+
+        showButton()
+
+    }, []);
+
     window.addEventListener("resize", showButton);
 
     return (
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
+                    <Link 
+                        to="/" 
+                        className="navbar-logo"
+                        onClick={closeMobileMenu}
+                    >
                         TRVL
                         <FaTypo3 />
                     </Link>

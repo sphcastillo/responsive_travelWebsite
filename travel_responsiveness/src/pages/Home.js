@@ -1,10 +1,12 @@
 import React from 'react';
+import Hero from "../components/Hero";
+import "../App.css";
 
 function Home() {
     return (
-        <div>
-            
-        </div>
+        <>
+            <Hero />
+        </>
     )
 }
 
