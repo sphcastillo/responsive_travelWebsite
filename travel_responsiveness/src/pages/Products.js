@@ -1,10 +1,9 @@
 import React from 'react';
+import "../App.css";
 
 function Products() {
     return (
-        <div>
-            
-        </div>
+        <h1 className='products'>Products</h1>
     )
 }
 

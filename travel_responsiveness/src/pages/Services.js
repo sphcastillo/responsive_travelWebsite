@@ -1,10 +1,9 @@
 import React from 'react';
+import "../App.css";
 
 function Services() {
     return (
-        <div>
-            
-        </div>
+        <h1 className='services'>Services</h1>
     )
 }
 

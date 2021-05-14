@@ -28,6 +28,8 @@ function Cards() {
                             path = '/services'
                         
                         />
+                    </ul>
+                    <ul className="cards_items">
                         <CardItem 
                             src= {Peru}
                             text="Reach new altitudes in Peru"
@@ -50,6 +52,8 @@ function Cards() {
                         
                         />
                     </ul>
+
+                    
                 </div>
             </div>
 
