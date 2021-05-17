@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from './Button';
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import {FaTypo3,
@@ -10,9 +9,6 @@ import {FaTypo3,
         FaYoutube,
         FaTwitter
 } from 'react-icons/fa';
-=======
-import './Footer.css';
->>>>>>> 25e166f3672436c2820a8c792f245831f7978a96
 
 function Footer() {
     return (
